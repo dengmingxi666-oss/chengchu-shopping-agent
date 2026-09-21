@@ -1,0 +1,14 @@
+{
+  "name": "chengchu-shopping-agent",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node work/config-server.mjs",
+    "test": "npm --prefix work/site test",
+    "build": "node build-pages.mjs"
+  }
+}

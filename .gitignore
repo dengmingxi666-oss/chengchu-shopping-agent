@@ -1,0 +1,7 @@
+node_modules/
+_site/
+work/ark-settings.json
+.env
+.env.*
+*.log
+outputs/*.json

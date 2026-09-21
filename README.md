@@ -64,4 +64,3 @@ npm run build
 设计调研借鉴 [NVIDIA Retail Shopping Assistant](https://github.com/NVIDIA-AI-Blueprints/retail-shopping-assistant)、[SalesGPT](https://github.com/filip-michalsky/SalesGPT)、[ShoppingGPT](https://github.com/Hoanganhvu123/ShoppingGPT)。没有复制其实现代码或安装其依赖，具体阅读位置与固定提交见 [RESEARCH.md](work/site/RESEARCH.md)。
 
 部署依据：[GitHub Pages 说明](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)、[自定义部署工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)。
-
