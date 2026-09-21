@@ -4,6 +4,9 @@ import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 import {chat} from './work/site/runtime.mjs';
 
+const envFile=fileURLToPath(new URL('./.env',import.meta.url));
+if(fs.existsSync(envFile))process.loadEnvFile(envFile);
+
 const assets=new Map(['index.html','ui.js','agent.js','knowledge.js','v2.css'].map(name=>['/'+name,fs.readFileSync(fileURLToPath(new URL('./work/site/dist/'+name,import.meta.url)))]));
 export function createServer(env=process.env){
  const limits=new Map();

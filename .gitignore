@@ -7,3 +7,5 @@ work/ark-settings.json
 outputs/*.json
 
 **/deepseek-settings.json
+
+!.env.example
