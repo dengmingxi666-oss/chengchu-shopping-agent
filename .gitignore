@@ -5,3 +5,5 @@ work/ark-settings.json
 .env.*
 *.log
 outputs/*.json
+
+**/deepseek-settings.json
