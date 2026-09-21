@@ -58,7 +58,7 @@ GitHub Pages 是静态托管，不能运行本项目的模型服务端，也不�
 需要 Node.js 22 或更高版本，无第三方运行时依赖。
 
 ```sh
-npm start
+npm run start:local
 ```
 
 打开 http://127.0.0.1:8765/ 。本机配置入口 http://127.0.0.1:8765/settings 可验证方舟 API Key 与模型 ID，验证通过才保存到本机忽略文件。该配置不会自动同步到 GitHub Pages。
@@ -102,3 +102,8 @@ npm run build
 设计调研借鉴 [NVIDIA Retail Shopping Assistant](https://github.com/NVIDIA-AI-Blueprints/retail-shopping-assistant)、[SalesGPT](https://github.com/filip-michalsky/SalesGPT)、[ShoppingGPT](https://github.com/Hoanganhvu123/ShoppingGPT)。没有复制其实现代码或安装其依赖，具体阅读位置与固定提交见 [RESEARCH.md](work/site/RESEARCH.md)。
 
 部署依据：[GitHub Pages 说明](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)、[自定义部署工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)。
+
+
+## Render 模型服务部署
+
+使用 Web Service，启动命令 `npm start`，在 Render Environment 配置 `DEEPSEEK_API_KEY` 和 `DEEPSEEK_MODEL=deepseek-flash`。服务监听 `0.0.0.0` 和平台 `PORT`。完整步骤见 [RENDER.md](RENDER.md)。
